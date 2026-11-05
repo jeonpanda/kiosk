@@ -151,6 +151,8 @@ activemq-data/
 
 # Environments
 .env
+*.env
+mongodb.txt
 .envrc
 .venv
 env/
