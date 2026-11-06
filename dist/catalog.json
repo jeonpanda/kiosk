@@ -1,0 +1,13 @@
+[
+  {"id":1,"cat":"커피","name":"아메리카노","desc":"깊고 깔끔한 에스프레소","price":4000,"img":"photo-1514432324607-a09d9b4aefdd","tag":"BEST"},
+  {"id":2,"cat":"커피","name":"카페 라떼","desc":"고소한 우유와 진한 에스프레소","price":4800,"img":"photo-1570968915860-54d5c301fa9f","tag":"BEST"},
+  {"id":3,"cat":"커피","name":"바닐라 라떼","desc":"달콤한 바닐라가 더해진 라떼","price":5300,"img":"photo-1461023058943-07fcbe16d735"},
+  {"id":4,"cat":"커피","name":"카푸치노","desc":"부드러운 우유 거품 한가득","price":4800,"img":"photo-1534778101976-62847782c213"},
+  {"id":5,"cat":"커피","name":"카라멜 마키아토","desc":"달콤한 카라멜과 부드러운 우유","price":5500,"img":"photo-1485808191679-5f86510681a2"},
+  {"id":6,"cat":"논커피","name":"말차 라떼","desc":"쌉싸름하고 진한 말차의 풍미","price":5500,"img":"photo-1515823064-d6e0c04616a7","tag":"SIGNATURE"},
+  {"id":7,"cat":"논커피","name":"초콜릿 라떼","desc":"진하고 달콤한 초콜릿","price":5000,"img":"images/chocolate-latte.svg"},
+  {"id":8,"cat":"논커피","name":"자몽 에이드","desc":"상큼하게 즐기는 탄산 한 잔","price":5500,"img":"images/grapefruit-ade.svg","cold":true},
+  {"id":9,"cat":"디저트","name":"버터 크루아상","desc":"겹겹이 바삭한 프랑스식 크루아상","price":3800,"img":"photo-1555507036-ab1f4038808a","tag":"BEST"},
+  {"id":10,"cat":"디저트","name":"뉴욕 치즈케이크","desc":"진하고 부드러운 치즈케이크","price":5800,"img":"photo-1533134242443-d4fd215305ad"},
+  {"id":11,"cat":"디저트","name":"초코 쿠키","desc":"초콜릿이 콕콕 박힌 쿠키","price":3000,"img":"photo-1499636136210-6f4ee915583e"}
+]

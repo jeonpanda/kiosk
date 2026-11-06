@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>주문 관리 | 오후의 커피</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="mark">o</span><span>오후의 커피<small>ORDER DESK</small></span></a>
+      <div class="top-actions"><a href="/">키오스크로 돌아가기</a><button id="logout" hidden>로그아웃</button></div>
+    </header>
+
+    <main>
+      <section id="login" class="login-card" hidden>
+        <div class="eyebrow">ADMIN ACCESS</div>
+        <h1>주문 관리 로그인</h1>
+        <p>관리자 비밀번호를 입력해 주세요.</p>
+        <form id="loginForm">
+          <label for="password">비밀번호</label>
+          <input id="password" type="password" autocomplete="current-password" required>
+          <button type="submit">로그인</button>
+        </form>
+        <p id="loginError" class="error" role="alert"></p>
+      </section>
+
+      <section id="dashboard" hidden>
+        <div class="page-heading">
+          <div><div class="eyebrow">ORDER DESK</div><h1>주문 관리</h1><p>최근 주문 100건을 확인하고 진행 상태를 바꿀 수 있습니다.</p></div>
+          <button id="refresh" class="refresh" type="button">새로고침</button>
+        </div>
+        <div id="stats" class="stats" aria-label="주문 현황"></div>
+        <div class="list-head">
+          <h2>주문 목록</h2>
+          <nav id="filters" class="filters" aria-label="주문 상태 필터">
+            <button class="active" data-filter="all">전체</button>
+            <button data-filter="received">접수</button>
+            <button data-filter="preparing">제조 중</button>
+            <button data-filter="ready">준비 완료</button>
+            <button data-filter="completed">전달 완료</button>
+          </nav>
+        </div>
+        <p id="message" class="message" role="status"></p>
+        <div id="orders" class="orders"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오후의 커피 | 주문하기</title>
+<meta name="description" content="오후의 커피 셀프 주문 키오스크">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<main class="main">
+<header class="top">
+<div class="brand">
+<span class="mark">o</span>
+<span>오후의 커피<small>O H U  C O F F E E</small>
+</span>
+</div>
+<div class="top-right">
+<span class="kiosk-label"><b>●</b> &nbsp; SELF ORDER KIOSK</span>
+<a class="admin-link" href="admin.html" aria-label="관리자 주문 화면으로 이동">관리자 화면 ↗</a></div>
+</header>
+<section class="hero">
+<div>
+<div class="eyebrow">A LITTLE PAUSE FOR YOU</div>
+<h1>좋은 하루의 시작,<br>좋아하는 한 잔과 함께.</h1>
+<p>오늘도 당신의 여유를 정성껏 준비할게요.</p>
+</div>
+</section>
+<div class="section-head">
+<div>
+<h2>어떤 메뉴를 드릴까요?</h2>
+<p>원하시는 메뉴를 선택해 주세요.</p>
+</div>
+<span class="count" id="menuCount">
+</span>
+</div>
+<nav class="tabs" aria-label="메뉴 분류" id="tabs">
+</nav>
+<section class="grid" id="grid" aria-label="메뉴 목록">
+</section>
+</main>
+<aside class="sidebar" id="sidebar">
+<button class="cart-toggle" id="cartToggle" aria-expanded="false" aria-controls="cart">
+<span>주문 내역 <b id="compactCount">0개</b>
+</span>
+<span id="toggleLabel">펼쳐보기 ↑</span>
+</button>
+<div class="side-top">
+<h2>주문 내역</h2>
+<span class="badge" id="cartCount">0개</span>
+</div>
+<p class="side-desc">선택하신 메뉴를 확인해 주세요.</p>
+<div class="place-label">이용 방법</div>
+<div class="place" id="place">
+<button class="active" data-place="매장">매장에서</button>
+<button data-place="포장">포장할게요</button>
+</div>
+<div class="cart" id="cart">
+</div>
+<div class="total">
+<div class="total-row">
+<span>총 결제 금액</span>
+<strong id="total">0원</strong>
+</div>
+<button class="pay" id="pay" disabled>결제하기 →</button>
+<p class="notice">가상 결제 화면입니다. 실제로 결제되지 않습니다.</p>
+</div>
+</aside>
+</div>
+<div class="overlay" id="overlay" hidden>
+<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modal">
+</div>
+</div>
+<script src="app.js" defer>
+</script>
+</body>
+</html>
